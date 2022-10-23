@@ -1,0 +1,15 @@
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\test1opentk.exe.config
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\test1opentk.exe
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\test1opentk.pdb
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\OpenTK.dll
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\OpenTK.pdb
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\OpenTK.xml
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\obj\Debug\test1opentk.csproj.AssemblyReference.cache
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\obj\Debug\test1opentk.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\obj\Debug\test1opentk.csproj.CoreCompileInputs.cache
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\obj\Debug\test1opentk.csproj.CopyComplete
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\obj\Debug\test1opentk.exe
+C:\Users\Kryss\source\repos\test1opentk\test1opentk\obj\Debug\test1opentk.pdb

@@ -1,0 +1,15 @@
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\obj\Debug\ModImediat.csproj.AssemblyReference.cache
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\obj\Debug\ModImediat.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\obj\Debug\ModImediat.csproj.CoreCompileInputs.cache
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\Mod3d.exe.config
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\Mod3d.exe
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\Mod3d.pdb
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\OpenTK.dll
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\OpenTK.GLControl.dll
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\OpenTK.pdb
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\OpenTK.xml
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\OpenTK.GLControl.pdb
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\bin\Debug\OpenTK.GLControl.xml
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\obj\Debug\ModImediat.csproj.CopyComplete
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\obj\Debug\Mod3d.exe
+C:\Users\Kryss\source\repos\test1opentk\Mod3d\obj\Debug\Mod3d.pdb

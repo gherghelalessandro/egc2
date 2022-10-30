@@ -10,9 +10,12 @@ namespace test1opentk
     public class Program:GameWindow
     {
         float x=0, y=0;
+        int text;
         public Program():base(800,600)
         {
             KeyDown +=Keyboard_KeyDown;
+            GL.Enable(EnableCap.Texture2D);
+
         }
 
         void Keyboard_KeyDown(object sender, KeyboardKeyEventArgs e)
@@ -29,6 +32,7 @@ namespace test1opentk
         protected override void OnLoad(EventArgs e)
         {
             GL.ClearColor(Color.MidnightBlue);
+            text = Draw.loadTexture("C:\\Users\\Kryss\\Desktop\\image.jpg");
 
         }
         protected override void OnResize(EventArgs e)
@@ -38,7 +42,7 @@ namespace test1opentk
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadIdentity();
             //determina marimea axei de cordonate x,y;
-            GL.Ortho(-10.0, 10.0, -10.0, 10.0, 0.0, 4.0);
+            GL.Ortho(-5.0, 5.0, -5.0, 5.0, 0.0, 4.0);
         }
         protected override void OnUpdateFrame(FrameEventArgs e)
         {
@@ -67,12 +71,22 @@ namespace test1opentk
         {
             GL.Clear(ClearBufferMask.ColorBufferBit);
 
+            GL.BindTexture(TextureTarget.Texture2D,text);
+
             GL.Begin(PrimitiveType.Polygon);
-            GL.Color3(Color.Red);
-            GL.Vertex2(x + 0.1f, y + 0.1f);
-            GL.Vertex2(x + 0.1f, y - 0.1f);
-            GL.Vertex2(x - 0.1f, y - 0.1f);
-            GL.Vertex2(x - 0.1f, y + 0.1f);
+            
+            
+            GL.Vertex2(x + 1, y + 1);
+            GL.TexCoord2(1, 1);
+            
+            GL.Vertex2(x + 1, y - 1);
+            GL.TexCoord2(1, 0);
+       
+            GL.Vertex2(x - 1, y - 1);
+            GL.TexCoord2(0, 0);
+          
+            GL.Vertex2(x - 1, y + 1);
+            GL.TexCoord2(0, 1);
             GL.End();
 
             this.SwapBuffers();

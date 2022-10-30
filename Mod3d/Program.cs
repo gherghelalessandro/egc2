@@ -14,7 +14,7 @@ namespace Mod3d
         [STAThread]
         static void Main(string[] args)
         {
-            using (Window2d example = new Window2d())
+            using (Window3d example = new Window3d())
             {
                 example.Run(30.0, 0.0);
             }

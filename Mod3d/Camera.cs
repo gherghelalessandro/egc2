@@ -20,15 +20,15 @@ namespace Mod3d
         }
         public void setmatrix()
         {
-            lookat = Matrix4.LookAt(position, eye, new Vector3(0, 1, 0));
+            //lab 3 ex 5
+            lookat = Matrix4.LookAt(position,eye, new Vector3(0, 1, 0));
             GL.MatrixMode(MatrixMode.Modelview);
             GL.LoadMatrix(ref lookat);
         }
        
         public void move(int i)
         {
-            position.Z -= i;
-            eye.Z -= i;
+            position += eye * i;
         }
         //lab3.8
         public void rotate(double i)

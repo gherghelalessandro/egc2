@@ -12,17 +12,17 @@ namespace Mod3d
         private const int XYZ_SIZE = 75;
         Triangle t = new Triangle("C:\\Users\\Kryss\\source\\repos\\egc2\\Mod3d\\cordonate.txt");
         private KeyboardState previousKeyboard;
-        Grid g;
         Camera cam;
         Vector3[] v;
+        int lasttimex;
+        bool first=true;
 
         public Window3d() : base(800, 600, new GraphicsMode(32, 24, 0, 8))
         {
             VSync = VSyncMode.On;
-            g = new Grid();
             v = new Vector3[2];
-            v[0] = new Vector3(10, 5, 0);
-            v[1] = new Vector3(0, 0, 0);
+            v[0] = new Vector3(10,10,10);
+            v[1] = new Vector3(0, 1, 0);
             cam = new Camera(v[0], v[1]);
             Console.WriteLine("OpenGl versiunea: " + GL.GetString(StringName.Version));
             Title = "OpenGl versiunea: " + GL.GetString(StringName.Version) + " (mod imediat)";
@@ -49,8 +49,6 @@ namespace Mod3d
             Matrix4 perspective = Matrix4.CreatePerspectiveFieldOfView(MathHelper.PiOver4, (float)aspect_ratio, 1, 64);
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadMatrix(ref perspective);
-
-
             cam.setmatrix();
 
         }
@@ -61,14 +59,13 @@ namespace Mod3d
             
             KeyboardState keyboard = Keyboard.GetState();
             MouseState mouse = Mouse.GetState();
-            
+   
 
-            cam.rotate(mouse.X*e.Time);
-            
             if (keyboard[Key.Escape])
             {
                 Exit();
             }
+            //lab 3 ex 9
             if (keyboard[Key.R] && !previousKeyboard[Key.R])
             {
                 t.red = true;
@@ -98,15 +95,30 @@ namespace Mod3d
             {
                 t.brightendown();
             }
-            if (keyboard[Key.V])
+            /*
+            if(keyboard[Key.W])
             {
-                g.Show();
+                cam.move(1);
             }
-            if (keyboard[Key.I])
+            if (keyboard[Key.S])
             {
-                g.Hide();
+                cam.move(-1);
             }
-           
+            */
+            
+            //lab 3 ex 8
+            if(first==true)
+            {
+                cam.rotate(mouse.X * e.Time);
+                first = false;
+                lasttimex = mouse.X;
+            }
+            else
+            {
+                
+                cam.rotate(mouse.X-lasttimex);
+                lasttimex = mouse.X;
+            }
             
             previousKeyboard = keyboard;
 
@@ -167,7 +179,6 @@ namespace Mod3d
             */
             //LAB 3.8
             t.Draw();
-            g.Draw();
 
         }
         

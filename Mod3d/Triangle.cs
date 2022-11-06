@@ -46,6 +46,7 @@ namespace Mod3d
             }
             GL.End();
         }
+        //lab 3 ex 9
         public void brightenup()
         {
             if(red==true)
@@ -99,6 +100,15 @@ namespace Mod3d
             }
            
             color = Color.FromArgb(colorr, colorg, colorb);
+        }
+        //lab 3 ex 8
+        public void changecolor()
+        {
+            Random r = new Random();
+            colorr=r.Next(0,255);
+            colorb = r.Next(0, 255);
+            colorg = r.Next(0, 255);
+            color=Color.FromArgb(colorr, colorg, colorb);
         }
     }
 }

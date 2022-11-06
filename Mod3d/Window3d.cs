@@ -10,7 +10,7 @@ namespace Mod3d
     public class Window3d : GameWindow
     {
         private const int XYZ_SIZE = 75;
-        Triangle t = new Triangle("C:\\Users\\Kryss\\source\\repos\\egc2\\Mod3d\\cordonate.txt");
+        Triangle t = new Triangle("cordonate.txt");
         private KeyboardState previousKeyboard;
         Camera cam;
         Vector3[] v;

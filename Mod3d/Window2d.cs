@@ -55,7 +55,7 @@ namespace Mod3d
                 GL.Rotate(10, 0,0, mouse.X);
             }
             */
-
+            //lab 2 ex 2
             if (keyboard[Key.Left])
                 x -= 0.1f;
             if (keyboard[Key.Right])
